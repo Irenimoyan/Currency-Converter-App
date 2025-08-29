@@ -35,7 +35,7 @@ export default function Login() {
           type="password" value={password} onChange={e=>setPassword(e.target.value)}
         />
         {err && <p className="text-red-600 text-sm">{err}</p>}
-        <button className="w-full bg-blue-600 text-white p-3 rounded">Login</button>
+        <button className="w-full bg-blue-600 text-blue p-3 rounded">Login</button>
       </form>
       <p className="text-sm mt-3">
         No account? <Link to="/register" className="text-blue-600 underline">Register</Link>

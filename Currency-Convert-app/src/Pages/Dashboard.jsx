@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { useAuth } from "../Context/AuthContext";
 import { listenUserConversions, deleteConversion } from "../services/ConversionService";
-
+import Navbar from "../components/Navbar";
 export default function Dashboard() {
   const { user } = useAuth();
   const [items, setItems] = useState([]);

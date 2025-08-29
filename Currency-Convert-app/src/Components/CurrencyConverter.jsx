@@ -51,7 +51,7 @@ export default function CurrencyConverter({ onConverted }) {
     new Intl.NumberFormat(undefined, { style: "currency", currency: code }).format(v);
 
   return (
-    <div className="p-6 max-w-xl mx-auto bg-white rounded-2xl shadow-lg space-y-6 mt-6">
+    <div className="p-6 max-w-xl mx-auto bg-lightgray-600 rounded-2xl shadow-lg space-y-6 mt-6 place-items-center">
       <h2 className="text-2xl font-bold text-center">Currency Converter</h2>
 
       <div className="grid gap-4 sm:grid-cols-2">
@@ -99,7 +99,7 @@ export default function CurrencyConverter({ onConverted }) {
 
       {!user && (
         <p className="text-xs text-center text-gray-500">
-          Tip: <span className="font-semibold">Login</span> to save your conversion history.
+          Tip: <span className="font-semibold ">Login</span> to save your conversion history.
         </p>
       )}
     </div>

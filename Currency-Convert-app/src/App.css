@@ -5,6 +5,11 @@
   text-align: center;
 }
 
+@font-face {
+  font-family: "Nosifer";
+  src: url(./fonts/Nosifer-Regular.ttf) format('truetype');
+}
+
 .logo {
   height: 6em;
   padding: 1.5em;

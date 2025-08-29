@@ -13,9 +13,9 @@ export default function Navbar() {
   
 
   return (
-    <header className="bg-white shadow">
+    <header className="bg-white shadow-lg">
       <nav className="max-w-4xl mx-auto px-4 py-3 flex items-center justify-between">
-        <Link to="/" className="font-bold text-lg">💱 Money Converter</Link>
+        <Link to="/" className="font-bold text-black text-lg">💱 CONVERTIO</Link>
         <div className="flex gap-4">
           <Link to="/" className="hover:underline">Home</Link>
           {user ? (

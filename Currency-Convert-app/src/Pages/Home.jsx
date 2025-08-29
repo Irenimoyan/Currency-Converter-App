@@ -1,4 +1,4 @@
-import CurrencyConverter from "../components/CurrencyConverter";
+import CurrencyConverter from "../Components/CurrencyConverter"
 import { addConversionEntry } from "../services/ConversionService";
 
 export default function Home() {
