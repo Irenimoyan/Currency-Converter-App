@@ -31,7 +31,7 @@ function Home() {
 
         {/* Button */}
         <button
-          onClick={() => navigate("/login")}
+          onClick={() => navigate('/Login')}
           className="bg-brown-700 text-brown px-6 py-2 rounded-lg shadow-md hover:bg-red-800 transition"
         >
           Start

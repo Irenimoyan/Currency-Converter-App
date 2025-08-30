@@ -9,8 +9,8 @@ import RequireAuth from "./components/RequireAuth";
 export default function App() {
   return (
     <div className="min-h-screen">
-      <Navbar />
       <main className="max-w-4xl mx-auto p-4">
+        <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/login" element={<Login />} />

@@ -52,7 +52,7 @@ export default function CurrencyConverter({ onConverted }) {
 
   return (
     <div className="p-6 max-w-xl mx-auto bg-lightgray-600 rounded-2xl shadow-lg space-y-6 mt-6 place-items-center">
-      <h2 className="text-2xl font-bold text-center">Currency Converter</h2>
+      <h2 className="text-2xl font-bold text-center">Convertio</h2>
 
       <div className="grid gap-4 sm:grid-cols-2">
         <input
@@ -64,7 +64,8 @@ export default function CurrencyConverter({ onConverted }) {
           className="border p-3 rounded-lg focus:ring-2 focus:ring-blue-400 outline-none"
         />
 
-        <select
+        <select 
+          placeholder={toCurrency}
           value={fromCurrency}
           onChange={(e) => setFromCurrency(e.target.value)}
           className="border p-3 rounded-lg focus:ring-2 focus:ring-blue-400 outline-none"
@@ -73,6 +74,7 @@ export default function CurrencyConverter({ onConverted }) {
         </select>
 
         <select
+          placeholder={toCurrency}
           value={toCurrency}
           onChange={(e) => setToCurrency(e.target.value)}
           className="border p-3 rounded-lg focus:ring-2 focus:ring-blue-400 outline-none"
@@ -83,7 +85,7 @@ export default function CurrencyConverter({ onConverted }) {
         <button
           onClick={handleConvert}
           disabled={loading}
-          className="bg-blue-600 hover:bg-blue-700 text-white font-semibold p-3 rounded-lg transition disabled:opacity-50"
+          className="bg-blue-600 hover:bg-blue-700 text-blue-lg font-semibold p-3 rounded-lg transition disabled:opacity-50"
         >
           {loading ? "Converting…" : "Convert"}
         </button>
