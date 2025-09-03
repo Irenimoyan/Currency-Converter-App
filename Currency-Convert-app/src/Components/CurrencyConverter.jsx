@@ -68,13 +68,13 @@ export default function CurrencyConverter({ onConverted }) {
           value={amount}
           onChange={(e) => setAmount(e.target.value)}
           placeholder="Amount"
-          className="border p-3 rounded-lg focus:ring-2 focus:ring-indigo-500 outline-none"
+          className="shadow-lg p-3 rounded-lg focus:ring-2 focus:ring-indigo-500 outline-none"
         />
 
         <select
           value={fromCurrency}
           onChange={(e) => setFromCurrency(e.target.value)}
-          className="border p-3 rounded-lg focus:ring-2 focus:ring-indigo-500 outline-none"
+          className="shadow-lg p-3 rounded-lg focus:ring-2 focus:ring-indigo-500 outline-none"
         >
           {symbols.map((c) => (
             <option key={c} value={c}>
@@ -86,7 +86,7 @@ export default function CurrencyConverter({ onConverted }) {
         <select
           value={toCurrency}
           onChange={(e) => setToCurrency(e.target.value)}
-          className="border p-3 rounded-lg focus:ring-2 focus:ring-indigo-500 outline-none"
+          className="border-none p-3 rounded-lg focus:ring-2 focus:ring-indigo-500 outline-none shadow-lg"
         >
           {symbols.map((c) => (
             <option key={c} value={c}>
@@ -98,7 +98,7 @@ export default function CurrencyConverter({ onConverted }) {
         <button
           onClick={handleConvert}
           disabled={loading}
-          className="bg-indigo-700 hover:bg-indigo-800 text-white font-semibold p-3 rounded-lg transition disabled:opacity-50"
+          className="bg-blue-700 hover:bg-indigo-800 text-black font-semibold p-3 rounded-lg transition disabled:opacity-50 shadow-lg"
         >
           {loading ? "Converting…" : "Convert"}
         </button>

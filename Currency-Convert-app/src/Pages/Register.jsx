@@ -25,17 +25,17 @@ export default function Register() {
       <h1 className="text-2xl font-bold mb-4">Create account</h1>
       <form onSubmit={onSubmit} className="space-y-3">
         <input
-          className="w-full border p-3 rounded"
+          className="w-full shadow-lg p-3 rounded"
           placeholder="Email"
           type="email" value={email} onChange={e=>setEmail(e.target.value)}
         />
         <input
-          className="w-full border p-3 rounded"
+          className="w-full shadow-lg p-3 rounded"
           placeholder="Password"
           type="password" value={password} onChange={e=>setPassword(e.target.value)}
         />
         {err && <p className="text-red-600 text-sm">{err}</p>}
-        <button className="w-full bg-blue-600 text-white p-3 rounded">Register</button>
+        <button className="w-full bg-blue-600 text-blue-500 shadow p-3 rounded">Register</button>
       </form>
       <p className="text-sm mt-3">
         Have an account? <Link to="/login" className="text-blue-600 underline">Login</Link>
