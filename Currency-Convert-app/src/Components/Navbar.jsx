@@ -2,15 +2,7 @@ import { Link } from "react-router-dom";
 import { useAuth } from "../Context/AuthContext";
 
 export default function Navbar() {
-  const auth = useAuth();
-  
-  if (!auth) {
-    return null;    
-  }
-
   const { user, logout } = useAuth();
-
-  
 
   return (
     <header className="bg-white shadow-lg">

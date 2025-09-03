@@ -1,9 +1,10 @@
 import { Routes, Route } from "react-router-dom";
+import Navbar from "./Components/Navbar";
 import Home from "./Pages/Home";
 import Login from "./Pages/Login";
-import Register from "./pages/Register";
+import Register from "./Pages/Register";
 import Dashboard from "./Pages/Dashboard";
-import RequireAuth from "./components/RequireAuth";
+import RequireAuth from "./Components/RequireAuth";
 
 export default function App() {
   return (
