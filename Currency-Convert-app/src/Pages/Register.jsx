@@ -22,7 +22,7 @@ export default function Register() {
 
   return (
     <div className="max-w-md mx-auto bg-white p-6 mt-8 rounded-2xl shadow">
-      <h1 className="text-2xl font-bold mb-4">Create account</h1>
+      <h1 className="text-2xl text-blue-500 font-bold mb-4">Create account</h1>
       <form onSubmit={onSubmit} className="space-y-3">
         <input
           className="w-full shadow-lg p-3 rounded"
